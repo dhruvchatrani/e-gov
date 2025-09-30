@@ -1,0 +1,185 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "citizenAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "CitizenRegistered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "citizenAddress",
+						"type": "address"
+					}
+				],
+				"name": "CitizenVerified",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "citizens",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nationalId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isVerified",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "citizenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "registrationDate",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "government",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_citizenAddress",
+						"type": "address"
+					}
+				],
+				"name": "isCitizenVerified",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_nationalId",
+						"type": "uint256"
+					}
+				],
+				"name": "registerCitizen",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_citizenAddress",
+						"type": "address"
+					}
+				],
+				"name": "verifyCitizen",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"e-governance/Citizen Identity Management Contract.sol": "CitizenIdentity"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"e-governance/Citizen Identity Management Contract.sol": {
+			"keccak256": "0x5200b6fa9903a5a4a67230faca264d52dd1c8ab24612ec6d970975d74c3730d0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b3b95569499da3b99085133a5074aee67ff9c0bd8cf1e4a0cc499dd29130039c",
+				"dweb:/ipfs/QmcNsahbQVoAfP6qd2ZFCxq7uWJXuj4EfBi3r98M2ecj3D"
+			]
+		}
+	},
+	"version": 1
+}
